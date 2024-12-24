@@ -30,12 +30,12 @@ const conversationSchema=new mongoose.Schema({
     sender:{
         type:mongoose.Schema.ObjectId,
         required:true,
-        ref:"User"
+        ref:"user"
     },
     receiver:{
         type:mongoose.Schema.ObjectId,
         required:true,
-        ref:"User"
+        ref:"user"
     },
     messages:[
         {
